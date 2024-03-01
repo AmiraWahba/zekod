@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="css/all/bootstrap.css">
+  <link rel="stylesheet" href="css/stttyle.css">
+</head>
+<body class="container-fluid">
+<div></div>
+  <h1 class="head">Users</h1>
+ <p>Home Page</p> 
+
+ <div class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esseis</div>
+ <table class="table">
+
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th style="width:70%">Name</th>
+      <th>Name</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td>Name</td>
+      <td>Name</td>
+      <td>Name</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Name</td>
+      <td>Name</td>
+      <td>Name</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td>Name</td>
+      <td>Name</td>
+      <td>Name</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td>Name</td>
+      <td>Name</td>
+      <td>Name</td>
+      <td>Name</td>
+    </tr>
+  </tfoot>
+
+
+  <a class="link" href="#">Good morning</a>
+ </table>
+
+ <input type="checkbox" class="ch">
+ <label>Test</label>
+
+
+ <input type="text" class="in">
+
+  <script>
+var userData = {Name : "Osama" , Age : 40 };
+var jsonuserData = JSON.stringify(userData);
+
+fetch("http://localhost/zekod/filec.php",{
+  body : jsonuserData,
+  method : 'POST'
+}).then(response =>{ return response.json()}).then(
+  data =>{console.log(data)
+  });
+  </script>
+
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>

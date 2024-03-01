@@ -1,0 +1,93 @@
+
+th,
+td{
+    border: 5px solid rgb(248, 212, 6);
+ 
+    border-style : inset;
+
+  
+
+}
+
+.head{
+    background-color: rgb(238, 255, 127);
+    transition: 0.5s ease;
+}
+
+.head:hover{
+    background-color: rgb(47, 0, 255);
+}
+
+
+.ch + label{
+    font-size : 1.5rem;
+}
+.ch:checked{
+    display: none;
+}
+.ch:checked + label {
+    color: red;
+}
+
+ul{
+    list-style: none;
+}
+
+@media(min-width:768px){
+    p{
+        background-color: red;
+    }
+   
+}
+
+@media(max-width:768px){
+    p{
+        background-color: rgb(76, 0, 255);
+        opacity: 0.2;
+    
+    }
+   
+}
+
+a.link{
+    font-size: 3rem;
+}
+
+a.link:visited{
+    font-size: 3rem;
+    color:blueviolet;
+}
+
+a.link:hover{
+    font-size: 3rem;
+    color:rgb(215, 200, 230);
+}
+
+div:empty{
+    height: 100px;
+    background-color: rgb(222, 57, 57);
+}
+
+
+.in:focus{
+   border: 5px solid #2fff00;
+
+}
+
+
+.two::first-letter{
+    background-color: blue;
+    font-size: 5rem;
+}
+ 
+h1::first-letter{
+    background-color: #2fff00;
+}
+
+::selection{
+    background-color: #2fff00;
+}
+
+th.thhh{
+    text-align: center;
+}

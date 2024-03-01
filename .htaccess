@@ -1,0 +1,6 @@
+Options +MultiViews
+RewriteEngine on
+RewriteCond %{REQUEST _FILENAME}!-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.html[? ].*$"
+RewriteRule .* - [L,R=404]
